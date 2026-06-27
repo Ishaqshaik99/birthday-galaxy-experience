@@ -2,6 +2,8 @@
 
 A premium, cinematic birthday website built with Next.js 15, React 19, TypeScript, Tailwind CSS, GSAP, Framer Motion, Three.js, React Three Fiber, tsParticles, Lenis, Howler.js, React Icons, and React Intersection Observer.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FIshaqshaik99%2Fbirthday-galaxy-experience)
+
 ## Stack
 
 - Next.js 15 App Router
