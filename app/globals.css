@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, rgba(87, 214, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 20% 20%, rgba(255, 120, 209, 0.12), transparent 18%),
+    radial-gradient(circle at 80% 0%, rgba(255, 215, 106, 0.1), transparent 18%),
+    #04030b;
+  font-family: var(--font-inter), sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(168, 100, 255, 0.35);
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.glass-card {
+  @apply border border-white/10 bg-white/10 shadow-glow backdrop-blur-2xl;
+}
+
+.section-padding {
+  @apply px-6 py-24 sm:px-8 lg:px-12 xl:px-20;
+}
+
+.text-gradient {
+  background-image: linear-gradient(110deg, #ffffff 10%, #d4b4ff 32%, #80dcff 52%, #ffd76a 76%, #ffffff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.aurora-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.radial-mask {
+  mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+}
+
+.timeline-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(168, 100, 255, 0.75), rgba(87, 214, 255, 0.75));
+  border-radius: 999px;
+}
+
+.type-caret::after {
+  content: "";
+  display: inline-block;
+  width: 0.08em;
+  height: 1em;
+  margin-left: 0.15em;
+  vertical-align: -0.1em;
+  background: currentColor;
+  animation: blink 1s steps(1) infinite;
+}
+
+.balanced-wrap {
+  text-wrap: balance;
+}
+
+.sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  animation: twinkle 2.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  46%,
+  100% {
+    opacity: 0;
+  }
+}
