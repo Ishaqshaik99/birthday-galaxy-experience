@@ -13,7 +13,7 @@ export function useAudioPlayer(src: string) {
     const sound = new Howl({
       src: [src],
       loop: true,
-      html5: true,
+      html5: false,
       volume,
       preload: true,
     });
